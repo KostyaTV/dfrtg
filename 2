@@ -1,0 +1,16 @@
+my_list = [1, 2, 3]
+print("Список: ", my_list)
+my_list[0] = 100
+print("Список после изменения первого числа: ", my_list)
+
+my_tuple = (1, 2, 3)
+print("Кортеж: ", my_tuple)
+try: my_tuple[0] = 100
+except TypeError: print("При изменении числа в my_tuple выводит ошибку, "
+      "т.к. этот тип списка не изменяем.")
+
+my_string = "cat"
+print("Строка: ", my_string)
+try: my_string[0] = "b"
+except TypeError: print("При изменении символа в my_string выводит ошибку, "
+      "т.к. этот тип списка не изменяем.")
